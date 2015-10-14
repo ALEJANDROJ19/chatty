@@ -1,0 +1,14 @@
+SERVER:
+    {client_join_req, Name, From} : Solicitud del client per connectar-se al servidor.
+    {client_leave_req, Name, From} : Solicitud per desconnectar-se del servidor.
+    {send, Name, Text} : Solicitud d'enviament de missatge
+
+//Robusta
+
+
+--
+CLIENT:
+
+
+//Robusta
+
