@@ -1,13 +1,19 @@
 SERVER:
     {client_join_req, Name, From} : Solicitud del client per connectar-se al servidor.
     {client_leave_req, Name, From} : Solicitud per desconnectar-se del servidor.
-    {send, Name, Text} : Solicitud d'enviament de missatge
+    {send, Name, Text} : Solicitud d'enviament de missatge.
+    disconnect : Desconecta el servidor.
 
 //Robusta
 
 
 --
 CLIENT:
+    {join, Name} : S'ha connectat un nou usuari al servidor.
+    {leave, Name} : S'ha desconnectat un usuari del servidor.
+    {message, Name, From} : El cliente recibe un mensaje de otro usuario.
+    exit : El client es desconnecta.
+
 
 
 //Robusta
