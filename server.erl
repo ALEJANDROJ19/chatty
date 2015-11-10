@@ -17,7 +17,7 @@ process_requests(Clients) ->
             process_requests(NewClients);  %% TODO: COMPLETE ## DONE!
         {client_leave_req, Name, From} ->
             NewClients = lists:delete(From, Clients),  %% TODO: COMPLETE ## DONE!
-            broadcast(Clients, {leave,Name}),  %% TODO: COMPLETE ## DONE!
+            broadcast(NewClients, {leave,Name}),  %% TODO: COMPLETE ## DONE!
             From ! exit,
             process_requests(NewClients);  %% TODO: COMPLETE ## DONE!
         {send, Name, Text} ->

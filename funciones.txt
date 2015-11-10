@@ -12,7 +12,7 @@ SERVER:
 CLIENT:
     {join, Name} : S'ha connectat un nou usuari al servidor.
     {leave, Name} : S'ha desconnectat un usuari del servidor.
-    {message, Name, From} : El cliente recibe un mensaje de otro usuario.
+    {message, Name, Text} : El cliente recibe un mensaje de otro usuario.
     exit : El client es desconnecta.
 
 
