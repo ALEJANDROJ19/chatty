@@ -5,8 +5,9 @@ SERVER:
     disconnect : Desconecta el servidor.
 
 //Robusta
-
-
+    {server_join_req, From} : Nuevo servidor on
+    {update_server, NewServers } : Informar de un nuevo servidor
+    RelayMessage : Trata otras clausulas
 --
 CLIENT:
     {join, Name} : S'ha connectat un nou usuari al servidor.
