@@ -41,7 +41,7 @@ process_requests(Clients, Servers) ->
             unregister(myserver);
         {server_join_req, From} ->
             NewServers = [From|Servers],  %% TODO: COMPLETE # DONE!
-            broadcast(Servers, {update_servers, NewServers}),  %% TODO: COMPLETE ### Done!
+            broadcast(NewServers, {update_servers, NewServers}),  %% TODO: COMPLETE ### Done!
             process_requests(Clients, NewServers);  %% TODO: COMPLETE # DONE!
         {update_servers, NewServers} ->
             io:format("[SERVER UPDATE] ~w~n", [NewServers]),
